@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Product Page</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Set body background color */
+    body {
+      background-color: #F2F2F2;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Center the content horizontally */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Navbar styles */
+    .navbar {
+      width: 100%;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.881);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .navbar li {
+      margin: 0 10px;
+    }
+    
+    .navbar a {
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .navbar a:hover {
+      color: #000000;
+    }
+    
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333;
+    }
+    
+    /* Product image styles */
+    .product-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Product details styles */
+    .product-details {
+      background-color: #FFFFFF;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .product-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .product-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+    
+    .product-features {
+      margin-bottom: 20px;
+    }
+    
+    .product-features ul {
+      list-style-type: none;
+    }
+    
+    .product-features li {
+      margin-bottom: 5px;
+    }
+    
+    .product-cta {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .product-cta button {
+      background-color: #333333;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .footer{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.17);
+}
+
+.footer h4{
+  position: relative;
+  top: 50%;
+}
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Car Company</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Models</a></li>
+          <li><a href="index.html">Gallery</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+  <div class="container">
+
+    
+    <div class="product-image">
+      <img src="img3.png" alt="Car Image">
+    </div>
+    
+    <div class="product-details">
+      <h1 class="product-title">Mini Cooper Convertible</h1>
+      <p class="product-description">MINI Cooper Convertible Price: MINI Cooper Convertible price starts at Rs. 38.30 Lakh and goes upto Rs. 51.82 Lakh. The price of Petrol variant for Cooper Convertible ranges between Rs. 38.30 Lakh - Rs. 51.82 Lakh..
+        <br><br>
+        MINI Cooper Convertible Versions: Cooper Convertible is available in 5 variants. Out of these 5 variants, 2 are Automatic and 3 are Automatic (DCT).
+      </p>
+      <p class="product-price">Rs. 38.30 Lakh - Rs. 51.82 Lakh..</p>
+      
+      <div class="product-features">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Engine:
+            1998 cc</li>
+          <li>Power and Torque : 
+            189 bhp & 280 Nm</li>
+          <li>DriveTrain :
+            FWD</li>
+          <li>Acceleration :
+            7.1 seconds</li>
+          <li>Top Speed :
+            230 kmph</li>
+          <li>Fuel Type :
+            Petrol</li>
+        </ul>
+      </div>
+      
+      <div class="product-cta">
+        <button type="button" onclick="javascript:a1()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h4>&#169;2007-2023 .www.minicooper.in</h4>
+  </div>
+  <script>
+    function a1(){
+      alert("Added to cart")
+    }
+  </script>
+</body>
+</html>

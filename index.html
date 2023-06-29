@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Company Landing Page</title>
+  <link  rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">MINI COOPER</div>
+      <ul>
+        <li><a href="#" class="hover-underline-animation">Home</a></li>
+        <li><a href="#about" class="hover-underline-animation">About</a></li>
+        <li><a href="#models" class="hover-underline-animation">Models</a></li>
+        <li><a href="#gallery" class="hover-underline-animation">Gallery</a></li>
+        <li><a href="#contact" class="hover-underline-animation">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="car-banner"></div>
+    
+    <div class="gallery" id="gallery">
+      <a href="#img1"><img src="img3.png" alt="Car 1"></a>
+      <a href="#img2"><img src="img2.png" alt="Car 2"></a>
+      <a href="#img3"><img src="img1.png" alt="Car 3"></a>
+      <!-- Add more car images as needed -->
+    </div>
+</div>
+
+<div class="row sec2" id="models" >
+    <div class="grid col-12">
+      <a href="product1.html"><img src="img3.png" class="gallary" id="img1"></a>
+    </div>
+    <div class="grid col-4">
+      <a href="product2.html"><img src="img2.png" class="gallary" id="img2"></a>
+    </div>
+    <div class="grid col-4">
+      <a href="product3.html"><img src="img1.png" class="gallary" id="img3"></a>
+    </div>
+    </div>
+    
+    <script>
+    // Add interactivity using JavaScript
+    const galleryimages = document.querySelectorAll(".gallery img");
+    
+    galleryImages.forEach(image => {
+      image.addEventListener("click", () => {
+        // Perform an action when an image is clicked
+        scrollToElement(image.getAttribute("href"));
+      });
+    });
+    
+    function scrollToElement(selector) {
+      const element = document.querySelector(selector);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    </script>
+<div class="container">
+    <div class="about-section" id="about">
+      <h2>About Us</h2>
+      <p>MINI Countryman price is Rs. 47.40 Lakh.
+
+        Mini launched the updated Countryman in India on 4 March, 2021. The model is available in two variants known as Cooper S and Cooper S JCW Inspired. Produced at the BMW facility in Chennai, the new Countryman is available in six dual-tone colour options.<br><br>
+        Powertrain options on the new Mini Countryman are limited to a 2.0-litre, four-cylinder petrol engine that produces 189bhp and 280Nm of torque. A seven-speed DCT unit is standard while a seven-speed DCT sport unit is offered with the special edition version. Also on offer are two drive modes that include Sport and Green.
+
+      </p>
+    </div>
+    
+    <div class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any inquiries or need assistance, please fill out the form below:</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <h4>&#169;2007-2023 .www.minicooper.in</h4>
+  </div>
+  
+  <script>
+    // Add interactivity using JavaScript
+    const galleryImages = document.querySelectorAll(".gallery img");
+    
+    galleryImages.forEach(image => {
+      image.addEventListener("click", () => {
+        // Perform an action when an image is clicked
+        console.log("Image clicked:", image.alt);
+      });
+    });
+  </script>
+
+</body>
+</html>
